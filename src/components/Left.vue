@@ -36,8 +36,8 @@
             </template>
             <el-menu-item-group>
               <router-link to="/top2-1" tag="p"><el-menu-item index="3-1">预约挂号</el-menu-item></router-link>
-              <el-menu-item index="3-2">健康小贴士</el-menu-item>
-              <el-menu-item index="3-3">医生简介</el-menu-item>
+              <router-link to="/top2-2" tag="p"><el-menu-item index="3-2">健康小贴士</el-menu-item></router-link>
+              <router-link to="/top2-3" tag="p"><el-menu-item index="3-3">医生简介</el-menu-item></router-link>
             </el-menu-item-group>
           </el-submenu>
 

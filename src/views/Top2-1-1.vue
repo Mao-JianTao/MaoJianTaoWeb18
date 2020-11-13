@@ -18,7 +18,7 @@
                     <p>佑姆塘社区医院</p>
                 </div>
                 <div class="cent1-cent1">
-                    <p>湘雅一医院</p>
+                    <router-link to="/top2-1-3" tag="p">湘雅一医院</router-link>
                 </div>
                 <div class="cent1-cent1">
                     <p>长沙光大医院</p>

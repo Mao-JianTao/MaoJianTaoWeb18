@@ -241,7 +241,6 @@ export default {
   margin-top: 20px;
   width: 1100px;
   height: 705px;
-  border: 1px solid red;
 }
 .time {
     height: 30px;

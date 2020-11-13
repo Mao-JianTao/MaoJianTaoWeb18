@@ -51,6 +51,11 @@ export default {
         this.$router.push({
             path:'/main',
         })
+      } else {
+        this.$message({
+          message: "账号或密码错误",
+          type: "warning",
+        })
       }
     },
   },

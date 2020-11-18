@@ -44,7 +44,7 @@
           ></el-table-column>
           <el-table-column
             prop="biao"
-            label="健康标题"
+            label="健康标题" 
             width="215"
              align="center"
           ></el-table-column>

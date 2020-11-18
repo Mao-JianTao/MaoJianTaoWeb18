@@ -47,7 +47,7 @@
               <span slot="title">智能应用</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="4-1">智能停车</el-menu-item>
+              <p @mouseenter="zhi" @mouseleave="zhi1"><router-link to="/top3-1" tag="p" ><el-menu-item index="4-1">智能停车</el-menu-item></router-link></p>
               <el-menu-item index="4-2">智能开门</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
@@ -90,10 +90,19 @@
         </el-menu>
       </el-col>
     </el-row>
+
+     <div class="zhi2" v-show="gg" @mouseenter="zhi3" @mouseleave="zhi4">
+      <router-link to="/top3-1-1" tag="p">车位录入</router-link>
+      <router-link to="/top3-1-2" tag="p">车辆管理</router-link>
+      <p>停车记录</p>
+    </div>
   </div>
 </template>
 
 <style scoped>
+template{
+  position: relative;
+}
 #cent-left {
   float: left;
   margin-left: 25px;
@@ -119,9 +128,52 @@
   border-radius: 0;
   background: rgb(109, 109, 109);
 }
+
+.zhi2{
+  position: absolute;
+  width: 100px;
+  top: 383px;
+  z-index: 1000;
+  left: 284px;
+  height: 150px;
+  border: 1px solid rgba(131, 131, 131, 0.829);
+  background: rgb(109, 109, 109);
+}
+.zhi2 p{
+  cursor: pointer;
+  text-align: center;
+  line-height: 25px;
+  height: 37px;
+  font-size: 12px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.zhi2 p:nth-of-type(3){
+  border: none;
+}
 </style>
 <script>
 export default {
   name: "Left",
+   data() {
+    return {
+      gg:false,
+
+    }
+  },
+  methods: {
+    zhi:function(){
+      this.gg=true;
+    },
+     zhi1:function(){
+      this.gg=false;
+    },
+    zhi3:function(){
+      this.gg=true;
+    },
+     zhi4:function(){
+      this.gg=false;
+    },
+  },
 };
 </script>

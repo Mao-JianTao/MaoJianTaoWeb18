@@ -12,6 +12,7 @@
           <span class="demonstration">结束日期: </span>
           <el-date-picker v-model="value2" size="mini" type="date" placeholder="选择日期"></el-date-picker>
         </div>
+        
 
         <div class="sele">
           <el-select v-model="value" size="mini" placeholder="缴费类型">

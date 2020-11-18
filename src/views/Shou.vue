@@ -127,9 +127,9 @@
 import Main from '../components/Main'
 export default {
   name:'Shou',
-   components:{
+   component:{
      Main
-    },
+   },
   methods: {
     handleClose(key, keyPath) {
       console.log(key, keyPath);
@@ -139,10 +139,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
 
 
 #cent-right {
@@ -162,7 +158,7 @@ export default {
   width: 190px;
   height: 80px;
   float: left;
-  margin-left: 4px;
+  margin-left: 4  px;
 }
 .cent-cent1-img {
   float: left;
@@ -191,19 +187,22 @@ export default {
   width: 300px;
   height: 350px;
   border: 1px solid rgb(178, 88, 206);
+  overflow: hidden;
 }
 .cent-cent2-2{
   float: left;
   margin-left: 7px;
-  width: 560px;
+  width: 550px;
   height: 350px;
   border: 1px solid rgb(178, 88, 206);
+  overflow: hidden;
 }
 .cent-cent2-3{
   float: right;
   width: 300px;
   height: 350px;
   border: 1px solid rgb(178, 88, 206);
+  overflow: hidden;
 }
 .cent2-text{
   line-height: 30px;

@@ -94,7 +94,7 @@
      <div class="zhi2" v-show="gg" @mouseenter="zhi3" @mouseleave="zhi4">
       <router-link to="/top3-1-1" tag="p">车位录入</router-link>
       <router-link to="/top3-1-2" tag="p">车辆管理</router-link>
-      <p>停车记录</p>
+      <router-link to="/top3-1-3" tag="p">停车记录</router-link>
     </div>
   </div>
 </template>
@@ -174,6 +174,7 @@ export default {
      zhi4:function(){
       this.gg=false;
     },
+    
   },
 };
 </script>

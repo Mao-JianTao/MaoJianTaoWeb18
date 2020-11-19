@@ -85,6 +85,11 @@ export default new Router({
                     component: () =>
                         import ('./views/Top3-1-2.vue')
                 },
+                {
+                    path: '/top3-1-3',
+                    component: () =>
+                        import ('./views/Top3-1-3.vue')
+                },
 
 
             ]

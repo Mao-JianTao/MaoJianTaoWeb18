@@ -30,4 +30,9 @@ export default {
   font-size: 12px;
   text-indent: 20px;
 }
+.qihun{
+  
+
+}
+
 </style>

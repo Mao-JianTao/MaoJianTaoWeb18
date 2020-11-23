@@ -13,7 +13,7 @@ export default {
             default:'物业缴费'
         }
     }
-}
+};
 </script>
 
 <style scoped>
@@ -29,10 +29,6 @@ export default {
   color: #ffffff;
   font-size: 12px;
   text-indent: 20px;
-}
-.qihun{
-  
-
 }
 
 </style>

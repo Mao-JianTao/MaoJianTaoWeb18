@@ -90,6 +90,56 @@ export default new Router({
                     component: () =>
                         import ('./views/Top3-1-3.vue')
                 },
+                {
+                    path: '/top3-2',
+                    component: () =>
+                        import ('./views/Top3-2.vue')
+                },
+                {
+                    path: '/top4-1',
+                    component: () =>
+                        import ('./views/Top4-1.vue')
+                },
+                {
+                    path: '/top4-2',
+                    component: () =>
+                        import ('./views/Top4-2.vue')
+                },
+                {
+                    path: '/top5-1',
+                    component: () =>
+                        import ('./views/Top5-1.vue')
+                },
+                {
+                    path: '/top5-2',
+                    component: () =>
+                        import ('./views/Top5-2.vue')
+                },
+                {
+                    path: '/top5-3',
+                    component: () =>
+                        import ('./views/Top5-3.vue')
+                },
+                {
+                    path: '/top5-4',
+                    component: () =>
+                        import ('./views/Top5-4.vue')
+                },
+                {
+                    path: '/top6-1',
+                    component: () =>
+                        import ('./views/Top6-1.vue')
+                },
+                {
+                    path: '/top6-2',
+                    component: () =>
+                        import ('./views/Top6-2.vue')
+                },
+                {
+                    path: '/top6-3',
+                    component: () =>
+                        import ('./views/Top6-3.vue')
+                },
 
 
             ]

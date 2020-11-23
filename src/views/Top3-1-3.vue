@@ -33,72 +33,79 @@
       </div>
 
       <div class="cent2">
-        <el-table :data="tableData" border style="width: 100%">
-          <el-table-column label="日期" align="center" width="130">
+        <el-table :data="tableData" border style="width: 99%">
+          <el-table-column label="入库日期" align="center" width="97">
+            <template slot-scope="scope">
+              <span style="margin-left: 10px">{{ scope.row.rudate }}</span>
+            </template>
+          </el-table-column>
+          <el-table-column label="出库时间" align="center" width="97">
             <template slot-scope="scope">
               <span style="margin-left: 10px">{{ scope.row.date }}</span>
             </template>
           </el-table-column>
-          <el-table-column label="停车场位置" align="center" width="130">
-            <template slot-scope="scope">
-              <span style="margin-left: 10px">{{ scope.row.ting }}</span>
-            </template>
-          </el-table-column>
-          <el-table-column label="车库位置" align="center" width="130">
-            <template slot-scope="scope">
-              <span style="margin-left: 10px">{{ scope.row.wei }}</span>
-            </template>
-          </el-table-column>
-          <el-table-column label="车位标识" align="center" width="130">
-            <template slot-scope="scope">
-              <span style="margin-left: 10px">{{ scope.row.biao }}</span>
-            </template>
-          </el-table-column>
-          <el-table-column label="车位照片" align="center" width="130">
-            <template slot-scope="scope">
-              <span style="margin-left: 10px">{{ scope.row.zhao }}</span>
-            </template>
-          </el-table-column>
-          <el-table-column label="车位业主" align="center" width="130">
+          <el-table-column label="停车场名称" align="center" width="97">
             <template slot-scope="scope">
               <span style="margin-left: 10px">{{ scope.row.name }}</span>
             </template>
           </el-table-column>
-          <el-table-column label="停放车辆" align="center" width="130">
+          <el-table-column label="车辆名称" align="center" width="97">
             <template slot-scope="scope">
-              <span style="margin-left: 10px">{{ scope.row.fang }}</span>
+              <span style="margin-left: 10px">{{ scope.row.che }}</span>
             </template>
           </el-table-column>
-
-          <el-table-column label="操作">
+          <el-table-column label="车辆型号" align="center" width="97">
             <template slot-scope="scope">
-              <el-button
-                size="mini"
-                @click="handleEdit(scope.$index, scope.row)"
-                >编辑</el-button
-              >
-              <el-button
-                size="mini"
-                type="danger"
-                @click="handleDelete(scope.$index, scope.row)"
-                >删除</el-button
-              >
+              <span style="margin-left: 10px">{{ scope.row.xing }}</span>
+            </template>
+          </el-table-column>
+          <el-table-column label="车辆车牌" align="center" width="97">
+            <template slot-scope="scope">
+              <span style="margin-left: 10px">{{ scope.row.pai }}</span>
+            </template>
+          </el-table-column>
+          <el-table-column label="停车时长" align="center" width="97">
+            <template slot-scope="scope">
+              <span style="margin-left: 10px">{{ scope.row.time }}</span>
+            </template>
+          </el-table-column>
+          <el-table-column label="停车费用" align="center" width="97">
+            <template slot-scope="scope">
+              <span style="margin-left: 10px">{{ scope.row.money }}</span>
+            </template>
+          </el-table-column>
+          <el-table-column label="停车费用" align="center" width="97">
+            <template slot-scope="scope">
+              <span style="margin-left: 10px">{{ scope.row.money }}</span>
+            </template>
+          </el-table-column>
+           <el-table-column label="支付方式" align="center" width="97">
+            <template slot-scope="scope">
+              <span style="margin-left: 10px">{{ scope.row.zhi }}</span>
+            </template>
+          </el-table-column>
+          <el-table-column label="操作" align="center" width="97">
+            <template slot-scope="scope">
+              <span style="margin-left: 10px">{{ scope.row.cao }}</span>
             </template>
           </el-table-column>
         </el-table>
       </div>
       <div class="cent-bot">
         <div class="cent-bot1">
-            <p>总记录数:100/条</p>
-            <p>页数:1/9</p>
-            <p>每页:12/条</p>
+          <p>总记录数:100/条</p>
+          <p>页数:1/9</p>
+          <p>每页:12/条</p>
         </div>
         <div class="cent-bot2">
-            <el-pagination background layout=" pager, next" :total="50"></el-pagination>
+          <el-pagination
+            background
+            layout=" pager, next"
+            :total="50"
+          ></el-pagination>
         </div>
+      </div>
     </div>
-    </div>
-    
   </div>
 </template>
 
@@ -133,19 +140,19 @@
   width: 98%;
   height: 500px;
 }
-.cent-bot{
-    height: 50px;
-    line-height: 50px;
+.cent-bot {
+  height: 50px;
+  line-height: 50px;
 }
-.cent-bot p{
-    float: left;
-    font-size: 13px;
-    margin: 0px 12px;
-    font-weight: bold;
+.cent-bot p {
+  float: left;
+  font-size: 13px;
+  margin: 0px 12px;
+  font-weight: bold;
 }
-.cent-bot2{
-    float: right;
-    margin-top: 10px;
+.cent-bot2 {
+  float: right;
+  margin-top: 10px;
 }
 </style>
 
@@ -157,45 +164,57 @@ export default {
     return {
       tableData: [
         {
-          date: "2019-09-01",
-          ting: "A区 停车场",
-          wei: "位置一.....",
-          biao: "xxx标识1",
-          zhao: "照片1",
-          name: "张xx",
-          fang: "京A ~F0236",
+          rudate: "2019-09-12 15:23:12",
+          date: "2019-09-13 15:23:12",
+          name: "A区 停车场",
+          che: "宝马1系",
+          xing: "116i",
+          pai: "京A~F0236",
+          time: "12小时",
+          money: "68",
+          zhi:"微信支付",
+          cao: "调用监控录像",
         },
         {
-          date: "2019-09-01",
-          ting: "B区 停车场",
-          wei: "位置二.....",
-          biao: "xxx标识2",
-          zhao: "照片2",
-          name: "许xx",
-          fang: "京A ~F0236",
+           rudate: "2019-09-12 15:23:12",
+          date: "2019-09-13 15:23:12",
+          name: "A区 停车场",
+          che: "宝马1系",
+          xing: "116i",
+          pai: "京A~F0236",
+          time: "12小时",
+          money: "68",
+          zhi:"微信支付",
+          cao: "调用监控录像",
         },
         {
-          date: "2019-09-01",
-          ting: "A区 停车场",
-          wei: "位置二.....",
-          biao: "xxx标识3",
-          zhao: "照片3",
-          name: "王xx",
-          fang: "京A ~F0236",
+           rudate: "2019-09-12 15:23:12",
+          date: "2019-09-13 15:23:12",
+          name: "A区 停车场",
+          che: "宝马1系",
+          xing: "116i",
+          pai: "京A~F0236",
+          time: "12小时",
+          money: "68",
+          zhi:"微信支付",
+          cao: "调用监控录像",
         },
         {
-          date: "2019-09-01",
-          ting: "C区 停车场",
-          wei: "位置一.....",
-          biao: "xxx标识1",
-          zhao: "照片四",
-          name: "李xx",
-          fang: "京A ~F0236",
+          rudate: "2019-09-12 15:23:12",
+          date: "2019-09-13 15:23:12",
+          name: "A区 停车场",
+          che: "宝马1系",
+          xing: "116i",
+          pai: "京A~F0236",
+          time: "12小时",
+          money: "68",
+          zhi:"微信支付",
+          cao: "调用监控录像",
         },
       ],
-      value1:'',
-  value2:'',
-  value3:'',
+      value1: "",
+      value2: "",
+      value3: "",
     };
   },
   methods: {

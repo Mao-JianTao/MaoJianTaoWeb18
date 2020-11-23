@@ -48,7 +48,7 @@
             </template>
             <el-menu-item-group>
               <p @mouseenter="zhi" @mouseleave="zhi1"><router-link to="/top3-1" tag="p" ><el-menu-item index="4-1">智能停车</el-menu-item></router-link></p>
-              <el-menu-item index="4-2">智能开门</el-menu-item>
+              <router-link to="/top3-2" tag="p"><el-menu-item index="4-2">智能开门</el-menu-item></router-link>
             </el-menu-item-group>
           </el-submenu>
 
@@ -58,8 +58,8 @@
               <span slot="title">数据统计</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="5-1">房屋分类统计</el-menu-item>
-              <el-menu-item index="5-2">缴费分析系统</el-menu-item>
+              <router-link to="/top4-1" tag="p"><el-menu-item index="5-1">房屋分类统计</el-menu-item></router-link>
+              <router-link to="/top4-2" tag="p"><el-menu-item index="5-2">缴费分析系统</el-menu-item></router-link>
             </el-menu-item-group>
           </el-submenu>
 
@@ -69,10 +69,10 @@
               <span slot="title">基本信息</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="6-1">房屋信息</el-menu-item>
-              <el-menu-item index="6-2">人口信息</el-menu-item>
-              <el-menu-item index="6-3">设备信息</el-menu-item>
-              <el-menu-item index="6-4">电子地图</el-menu-item>
+              <router-link to="/top5-1" tag="p"><el-menu-item index="6-1">房屋信息</el-menu-item></router-link>
+              <router-link to="/top5-2" tag="p"><el-menu-item index="6-2">人口信息</el-menu-item></router-link>
+              <router-link to="/top5-3" tag="p"><el-menu-item index="6-3">设备信息</el-menu-item></router-link>
+              <router-link to="/top5-4" tag="p"><el-menu-item index="6-4">电子地图</el-menu-item></router-link>
             </el-menu-item-group>
           </el-submenu>
 
@@ -82,9 +82,9 @@
               <span slot="title">系统管理</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="6-1">用户管理</el-menu-item>
-              <el-menu-item index="6-2">角色管理</el-menu-item>
-              <el-menu-item index="6-3">权限管理</el-menu-item>
+              <router-link to="/top6-1" tag="p"> <el-menu-item index="6-1">用户管理</el-menu-item></router-link>
+              <router-link to="/top6-2" tag="p"><el-menu-item index="6-2">角色管理</el-menu-item></router-link>
+              <router-link to="/top6-3" tag="p"><el-menu-item index="6-3">权限管理</el-menu-item></router-link>
             </el-menu-item-group>
           </el-submenu>
         </el-menu>
